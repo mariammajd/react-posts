@@ -45,7 +45,7 @@ this.toggle();
 render() {
     return (
         <div>
-{this.props.isAuthenticated ?  <Button color="dark" style={{marginBottom:'2rem'}} onClick={this.toggle}>Add item</Button> :
+{this.props.isAuthenticated ?  <Button color="dark" style={{marginBottom:'2rem'}} onClick={this.toggle}>Add Post</Button> :
 
 <h4 className="mb-3 ml-4">please login to manage Posts</h4> }
 
@@ -60,7 +60,7 @@ render() {
                 type="text"
                 name="name"
                 id="item"
-                placeholder="Add shopping item"
+                placeholder="Add Post Title"
                 onChange={this.onChange}
                 />
                 <Label for="item">description</Label>
@@ -68,7 +68,7 @@ render() {
                 type="text"
                 name="description"
                 id="item"
-                placeholder="Add shopping item"
+                placeholder="Add Post Description"
                 onChange={this.onChange}
                 />
                 <Button color="dark" style={{marginTop:'2rem'}} block>Add Posts</Button>
